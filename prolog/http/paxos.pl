@@ -3,7 +3,7 @@
 :- use_module(library(http/http_client)).
 :- use_module(library(http/http_json)).
 :- use_module(library(paxos)).
-:- use_module(paxos/ledger).
+:- use_module(library(paxos/ledger)).
 
 :- http_handler(root(paxos/Key), paxos_key(Method, Key),
                 [ method(Method),
